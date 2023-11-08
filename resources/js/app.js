@@ -2,24 +2,6 @@ import './bootstrap';
 import 'bootstrap';
 import 'bootstrap/js/dist/carousel';
 
-// // import Swiper JS
-// import Swiper from 'swiper';
-// // import Swiper styles
-// import 'swiper/css';
-
-
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 3,
-//     grid: {
-//       rows: 2,
-//     },
-//     spaceBetween: 30,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
 
 
 import AOS from 'aos';
@@ -47,51 +29,5 @@ AOS.init();
   })
 
 
-//   document.addEventListener('DOMContentLoaded', function () {
-//     const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-//     const emailInput = document.getElementById('email');
-//     const validationStatus = document.getElementById('email-validation-status');
-//     let emailToCheck = '';
-//     let timeoutId;
-//     emailInput.addEventListener('input', function () {
-//         const email = emailInput.value;
-//         clearTimeout(timeoutId);
-//         if (email.includes('@')) {
-//             emailToCheck = email;
-//             timeoutId = setTimeout(() => {
-//                 verificaEmail(emailToCheck).then(data => {
-//                     if (data.isRegistered) {
-//                         validationStatus.textContent = 'Email già registrata, Riprova!';
-//                     } else {
-//                         validationStatus.textContent = '';
-//                     }
-//                 }).catch(error => {
-//                     console.error('Errore durante la verifica dell\'email:', error);
-//                     validationStatus.textContent = ''; 
-//                 });
-//             }, 300);
-//         } else {
-//             validationStatus.textContent = '';
-//         }
-//     });
-//     function verificaEmail(email) {
-//         return new Promise((resolve, reject) => {
-//             fetch('/check-email', {
-//                 method: 'POST',
-//                 headers: {
-//                     'Content-Type': 'application/json',
-//                     'X-CSRF-TOKEN': csrfToken,
-//                 },
-//                 body: JSON.stringify({ email: email }),
-//             })
-//                 .then(response => response.json())
-//                 .then(data => {
-//                     resolve(data);
-//                 })
-//                 .catch(error => {
-//                     reject(error);
-//                 });
-//         });
-//     }
-// });
+
 
