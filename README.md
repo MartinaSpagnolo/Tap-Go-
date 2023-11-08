@@ -25,13 +25,3 @@ Una volta divenuto revisore, questi avrà la possibilità in un'apposita area a 
 * composer install
 * npm install
 
-
-
-
-
-
-
-<!-- Per la realizzazione del progetto è stato sfruttato il framework back end Laravel e altri pacchetti come
-Fortify per l’autenticazione, Livewire per la realizzazione di contenuti dinamici, Spatie per l’upload delle
-immagini, Laravel Scout (Tnt Search) per il sistema di ricerca e filtro. Il tutto è stato pensato e realizzato
-adottando un approccio mobile-first, grazie anche all’ausilio del framework Bootstrap. -->
